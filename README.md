@@ -25,8 +25,11 @@ html
 ### 2. Load Balancer (ALB)
 
 Type: Application Load Balancer
+
 Target Group: Contains 2 EC2 instances
+
 Protocol: HTTP (port 80)
+
 Health checks configured for port 80
 
 Result: The ALB evenly distributes traffic across multiple instances.
@@ -34,9 +37,13 @@ Result: The ALB evenly distributes traffic across multiple instances.
 ### 3. Auto Scaling Group (ASG)
 
 Launch template: Based on the working EC2 instance
+
 Desired capacity: 2
+
 Minimum: 1
+
 Maximum: 4
+
 Scaling policy: Add instances when CPU > 60%, remove when < 30%
 
 Result: When traffic increases, new EC2 instances are launched automatically.
