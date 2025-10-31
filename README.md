@@ -10,7 +10,7 @@ The goal of this task is to understand **scalability** and **fault tolerance** i
 ### 1. Web Application
 A simple static HTML page (`index.html`) was created and deployed on EC2 instances running the **Amazon Linux 2023** AMI.
 
-```html
+html
 <!DOCTYPE html>
 <html>
 <head>
